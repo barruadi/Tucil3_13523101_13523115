@@ -1,23 +1,23 @@
 package block;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Block {
-    
+
+    private final char id;
     private final int row;                          // posisi i di board
     private final int col;                          // posisi j di board
     private final int size;                         // panjang dari block
-    private final char id;
     private final boolean isVertical;               // kalau bentuknya | berarti true
-    private final boolean isPrimary;
     private final String color = "";
 
-
-    public Block(char id, int row, int col, int size, boolean verti, boolean primary){
+    public Block(char id, int row, int col, int size, boolean verti){
         this.id = id;
         this.row = row;
         this.col = col;
         this.size = size;
         this.isVertical = verti;
-        this.isPrimary = primary;
     }
     public char getBlockId(){
         return this.id;
@@ -35,7 +35,7 @@ public class Block {
         return this.isVertical;
     }
     public boolean isBlockPrimary(){
-        return this.isPrimary;
+        return this.id == 'P';
     }
 
     public String getColor(){
@@ -43,7 +43,7 @@ public class Block {
     }
 
     public Block makeBlockNewPosition(int row, int col){
-        return new Block(this.id, row, col, this.size, this.isVertical, this.isPrimary);
+        return new Block(this.id, row, col, this.size, this.isVertical);
     }
     
     public void printBlock(){
@@ -59,9 +59,23 @@ public class Block {
         }
     }
 
+    public List<int[]> getAllBlockCordinateInBoard(){
+        List<int[]> coordinate = new ArrayList<>();
+        if (this.isVertical){
+            for (int i = 0; i < this.size; i++){
+                coordinate.add(new int[]{this.row + i, this.col});
+            }
+        } else {
+            for (int i = 0; i < this.size; i++){
+                coordinate.add(new int[]{this.row, this.col + i});
+            }
+        }
+        return coordinate;
+
+    }
     @Override
     public String toString() {
-        return "Piece(" + id + ", " + (isPrimary ? "Primary" : "Regular") + ", " +
+        return "Piece(" + id + ", " + (this.isBlockPrimary() ? "Primary" : "Regular") + ", " +
                 (isVertical ? "Vertical" : "Horizontal") + ", Length:" + this.size +
                 ", Pos:(" + row + "," + col + "))";
     }
