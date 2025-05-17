@@ -18,7 +18,7 @@ public class AStar {
         BoardNode startNode = new BoardNode(initialBoard, null, 0, Heuristic.calculateHeuristic(initialBoard));
         
         openSet.add(startNode);
-        allNodes.put(boardToString(initialBoard), startNode);
+        allNodes.put(BoardNode.boardToString(initialBoard), startNode);
         
         while (!openSet.isEmpty()) {
             BoardNode current = openSet.poll();
@@ -28,14 +28,14 @@ public class AStar {
                 return reconstructPath(current);
             }
             
-            String currentBoardString = boardToString(current.board);
+            String currentBoardString = BoardNode.boardToString(current.board);
             closedSet.add(currentBoardString);
             
             List<Board> possibleMoves = current.board.getAllPossibleMove();
             
             for (Board nextBoard : possibleMoves) {
                 nextBoard.updateBoardData();
-                String nextBoardString = boardToString(nextBoard);
+                String nextBoardString = BoardNode.boardToString(nextBoard);
                 
                 if (closedSet.contains(nextBoardString)) {
                     continue;
@@ -70,20 +70,6 @@ public class AStar {
         }
         
         return new ArrayList<>();
-    }
-    
-    // convert board ke string untuk memudahkan perbandingan
-    private static String boardToString(Board board) {
-        StringBuilder sb = new StringBuilder();
-        char[][] boardData = board.getBoardData();
-        
-        for (int i = 0; i < board.getHeight(); i++) {
-            for (int j = 0; j < board.getWidth(); j++) {
-                sb.append(boardData[i][j]);
-            }
-        }
-        
-        return sb.toString();
     }
     
     private static List<Board> reconstructPath(BoardNode goalNode) {

@@ -99,7 +99,6 @@ public class Board {
         if (this.kiriAtas) {
             return this.primaryBlock.getBlockRowIndex() == 0;
         }
-        System.out.println("primary block row index: " + this.primaryBlock.getBlockColIndex() + " block size: " + this.primaryBlock.getBlockSize());
         return this.primaryBlock.getBlockColIndex() + this.primaryBlock.getBlockSize() == this.width;
     }
 

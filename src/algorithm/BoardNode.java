@@ -34,4 +34,18 @@ public class BoardNode implements Comparable<BoardNode> {
         return board.isSameBoard(other.board);
     }
 
+    // convert board ke string untuk memudahkan perbandingan
+    public static String boardToString(Board board) {
+        StringBuilder sb = new StringBuilder();
+        char[][] boardData = board.getBoardData();
+        
+        for (int i = 0; i < board.getHeight(); i++) {
+            for (int j = 0; j < board.getWidth(); j++) {
+                sb.append(boardData[i][j]);
+            }
+        }
+        
+        return sb.toString();
+    }
+
 }
