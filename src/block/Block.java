@@ -1,16 +1,15 @@
 package block;
 
 public class Block {
-
-    // disusun berdasarkan allignment
     
-    private final String color = "\u001B[33m";      // warna block, default yellow
     private final int row;                          // posisi i di board
     private final int col;                          // posisi j di board
     private final int size;                         // panjang dari block
     private final char id;
     private final boolean isVertical;               // kalau bentuknya | berarti true
     private final boolean isPrimary;
+    private final String color = "";
+
 
     public Block(char id, int row, int col, int size, boolean verti, boolean primary){
         this.id = id;
@@ -42,19 +41,28 @@ public class Block {
     public String getColor(){
         return this.color;
     }
+
+    public Block makeBlockNewPosition(int row, int col){
+        return new Block(this.id, row, col, this.size, this.isVertical, this.isPrimary);
+    }
     
     public void printBlock(){
-        System.out.println("Block " + this.id + " :");
-        if (isVertical){
-            for (int i=0; i < this.size; i++){
-                System.out.println("  " + this.color + this.id + "\u001B[0m");
+        if (isVertical) {
+            for (int i =0; i < size; i++){
+                System.out.println(this.id);
             }
         } else {
-            for (int i=0; i < this.size; i++){
-                System.out.print("  " + this.color + this.id + "\u001B[0m");
+            for (int i =0; i < size; i++){
+                System.out.print(this.id);
             }
             System.out.println();
         }
     }
 
+    @Override
+    public String toString() {
+        return "Piece(" + id + ", " + (isPrimary ? "Primary" : "Regular") + ", " +
+                (isVertical ? "Vertical" : "Horizontal") + ", Length:" + this.size +
+                ", Pos:(" + row + "," + col + "))";
+    }
 }
