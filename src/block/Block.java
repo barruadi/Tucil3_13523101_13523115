@@ -22,10 +22,10 @@ public class Block {
     public char getBlockId(){
         return this.id;
     }
-    public int getBlockRow(){
+    public int getBlockRowIndex(){
         return this.row;
     }
-    public int getBlockCol(){
+    public int getBlockColIndex(){
         return this.col;
     }
     public int getBlockSize(){
@@ -79,4 +79,9 @@ public class Block {
                 (isVertical ? "Vertical" : "Horizontal") + ", Length:" + this.size +
                 ", Pos:(" + row + "," + col + "))";
     }
+
+    public Block clone() {
+        return new Block(id, row, col, size, isVertical);
+    }
+
 }
