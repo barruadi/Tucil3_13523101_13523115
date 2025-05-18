@@ -57,49 +57,77 @@ public class InputOutput {
 
     }
 
-    public void makeBlocks(List<String> lines, Board board) {
+    public boolean makeBlocks(List<String> lines, Board board) {
         int row = board.getHeight();
         int col = board.getWidth();
+        int blockCount = Integer.parseInt(lines.get(1));
         char[][] tempData = new char[row][col];
         List<Character> visited = new ArrayList<>();
         List<Block> blocks = new ArrayList<>();
+        boolean checkVertical = false;
 
-        for (int i = 0; i < row; i++) {
-            String line = lines.get(i + 2);
+        // ini berarti masukan ga valid
+        if (lines.size() > row + 3) {
+            return false;
+        }
 
-            // K di kiri @ belum bisa
-            if (line.length() >= 1 && line.charAt(0) == 'K') {
-                // board.setExit(0);
-                line = line.substring(1);
-            } 
-
-            // K di kanan @ sudah aman
-
-            else if (line.length() == col + 1 && line.charAt(col) == 'K') {
+        int idx_k = -1;
+        if (row + 3 == lines.size()) {
+            if (lines.get(2).contains("K")) {
+                idx_k = lines.get(2).indexOf("K");
+                checkVertical = true;
+                board.setKiriAtas(true);
+                for (int i = 0; i < row; i++) {
+                    String line = lines.get(i + 3);
+                    for (int j = 0; j < col; j++) {
+                        tempData[i][j] = line.charAt(j);
+                    }
+                }
+            } else if (lines.get(row + 2).contains("K")) {
+                idx_k = lines.get(row + 2).indexOf("K");
+                checkVertical = true;
                 board.setKiriAtas(false);
-                line = line.substring(0, col);
+                for (int i = 0; i < row; i++) {
+                    String line = lines.get(i + 2);
+                    for (int j = 0; j < col; j++) {
+                        tempData[i][j] = line.charAt(j);
+                    }
+                }
+            }
+        } else {
+
+            boolean isPossibleKiri = true;
+            for (int i = 0; i < row; i++) {
+                String line = lines.get(i + 2);
+                if (line.length() != col + 1) {
+                    isPossibleKiri = false;
+                }
             }
 
-            for (int j = 0; j < col; j++) {
-                tempData[i][j] = line.charAt(j);
-            }
-        }
-
-        // K di atas belum bisa
-        String topLine = lines.get(1);
-        for (int j = 0; j < topLine.length(); j++) {
-            if (topLine.charAt(j) == 'K') {
-                // board.setExit(new int[]{-1, j});
-                break;
-            }
-        }
-
-        // K di bawah belum bisa
-        String bottomLine = lines.get(lines.size() - 1);
-        for (int j = 0; j < bottomLine.length(); j++) {
-            if (bottomLine.charAt(j) == 'K') {
-                // board.setExit(new int[]{row, j});
-                break;
+            if (isPossibleKiri) {
+                for (int i = 0; i < row; i++) {
+                    String line = lines.get(i + 2);
+                    if (line.charAt(0) == 'K') {
+                        idx_k = i;
+                        checkVertical = false;
+                        board.setKiriAtas(true);
+                    }
+                    for (int j = 0; j < col; j++) {
+                        tempData[i][j] = line.charAt(j + 1);
+                    }
+                }
+            } else {
+                for (int i = 0; i < row; i++) {
+                    String line = lines.get(i + 2);
+                    if (line.length() == col + 1 && line.charAt(col) == 'K') {
+                        idx_k = i;
+                        checkVertical = false;
+                        board.setKiriAtas(false);
+                    }
+                    for (int j = 0; j < col; j++) {
+                        tempData[i][j] = line.charAt(j);
+                    }
+                }
             }
         }
 
@@ -110,18 +138,15 @@ public class InputOutput {
                 if (id == '.' || visited.contains(id)) {
                     continue;
                 }
-
                 visited.add(id);
                 boolean isVertical = false;
                 int size = 1;
-
                 int ni = i + 1;
                 while (ni < row && tempData[ni][j] == id) {
                     size++;
                     isVertical = true;
                     ni++;
                 }
-
                 if (!isVertical) {
                     int nj = j + 1;
                     while (nj < col && tempData[i][nj] == id) {
@@ -129,17 +154,42 @@ public class InputOutput {
                         nj++;
                     }
                 }
-
+                if (id == 'K') {
+                    continue;
+                }
                 Block block = new Block(id, i, j, size, isVertical);
                 blocks.add(block);
                 if (id == 'P') {
+                    if (isVertical == true && checkVertical == true){
+                        if (j != idx_k){
+                            System.out.println("gak sesuai posisi");
+                            return false;
+                        }
+                    }
+                    else if (isVertical == false && checkVertical == false){
+                        if (i != idx_k){
+                            System.out.println("gak sesuai posisi");
+                            return false;
+                        }
+                    }
+                    else{
+                        return false;
+                    }
                     board.setPrimaryBlock(block);
                 }
             }
         }
-
+        if (!visited.contains('P')) {
+            System.out.println("Blok P tidak ditemukan");
+            return false;
+        }
+        if (blockCount != blocks.size()-1 || blocks.size() - 1 > 24 || blockCount > 24) {
+            System.out.println("Jumlah block tidak sesuai");
+            return false;
+        }
         board.setBlocks(blocks);
         board.updateBoardData();
+        return true;
     }
 
 }
