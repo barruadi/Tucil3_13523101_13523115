@@ -87,17 +87,21 @@ public class Board {
             }
         }
     }
+    public boolean getKiriAtas() {
+        return this.kiriAtas;
+    }
 
     public boolean isFinish() {
         if (this.primaryBlock.isBlockVertical()) {
             if (this.kiriAtas) {
-                return this.primaryBlock.getBlockColIndex() == 0;
+                return this.primaryBlock.getBlockRowIndex() == 0;
+            } else{
+                return this.primaryBlock.getBlockRowIndex() + this.primaryBlock.getBlockSize() == this.height;
             }
-            return this.primaryBlock.getBlockColIndex() + this.primaryBlock.getBlockSize() == this.height;
         }
         // horizontal
         if (this.kiriAtas) {
-            return this.primaryBlock.getBlockRowIndex() == 0;
+            return this.primaryBlock.getBlockColIndex() == 0;
         }
         return this.primaryBlock.getBlockColIndex() + this.primaryBlock.getBlockSize() == this.width;
     }
@@ -142,6 +146,7 @@ public class Board {
         for (int i = 0; i < this.height; i++) {
             System.arraycopy(this.boardData[i], 0, newBoard.boardData[i], 0, this.width);
         }
+        newBoard.setKiriAtas(this.kiriAtas);
 
         return newBoard;
     }
