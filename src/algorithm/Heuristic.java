@@ -23,4 +23,44 @@ public class Heuristic{
             }
         }
     }
+
+    // Heuristic 2: Banyaknya mobil yang mengahalangi dari exit
+    public static int calculateHeuristicDua(Board board) {
+        Block primaryBlock = board.getPrimaryBlock();
+
+        int row = primaryBlock.getBlockRowIndex();
+        int col = primaryBlock.getBlockColIndex();
+        int carAmount = 0;
+
+        if (primaryBlock.isBlockVertical()) {
+            if (board.isKiriAtas()) {
+                for (int i = row; i > 0; i--) {
+                    if ((board.getBoardData())[i][col] != '.') {
+                        carAmount++;
+                    }
+                }
+            } else {
+                for (int i = row + primaryBlock.getBlockSize(); i < board.getHeight(); i++) {
+                    if ((board.getBoardData())[i][col] != '.') {
+                        carAmount++;
+                    }
+                }
+            }
+        } else {
+            if (board.isKiriAtas()) {
+                for (int i = col; i > 0; i--) {
+                    if ((board.getBoardData())[row][i] != '.') {
+                        carAmount++;
+                    }
+                }
+            } else {
+                for (int i = col + primaryBlock.getBlockSize(); i < board.getWidth(); i++) {
+                    if ((board.getBoardData())[row][i] != '.') {
+                        carAmount++;
+                    }
+                }
+            }
+        }
+        return carAmount;
+    }
 }
