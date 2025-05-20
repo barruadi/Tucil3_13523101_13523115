@@ -21,7 +21,7 @@ public class Main {
         String algorithm = args[0];
         String heuristic = args[1];
 
-        List<Board> allPossibleMoves = board.getAllPossibleMove();
+        long start = System.currentTimeMillis();
 
         List<Board> boards = new ArrayList<>();
         if (algorithm.equals("AStar")) {
@@ -33,8 +33,11 @@ public class Main {
         } else if (algorithm.equals("bidirectional")) {
             boards = BidirectionalSolver.solve(board);
         }
+
+        long end = System.currentTimeMillis();
+
         // Convert solution to JSON
-        String jsonOutput = BoardToJsonConverter.convertToJson(boards);
+        String jsonOutput = BoardToJsonConverter.convertToJson(boards, end - start);
         
         // Save JSON to file
         try (FileWriter file = new FileWriter("../src/frontend/test/public/solution.json")) {

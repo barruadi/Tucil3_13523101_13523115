@@ -6,9 +6,9 @@ import java.util.*;
 
 public class BoardToJsonConverter {
 
-    public static String convertToJson(List<Board> boardList) {
+    public static String convertToJson(List<Board> boardList, long time) {
         if (boardList == null || boardList.isEmpty()) {
-            return "{ \"steps\": [] }";
+            return "{ \"steps\": [], \"exit\": { \"row\": 0, \"col\": 0 }, \"time\": 0 }";
         }
         
         StringBuilder json = new StringBuilder();
@@ -72,8 +72,17 @@ public class BoardToJsonConverter {
             }
             json.append("\n");
         }
-        
-        json.append("  ]\n}");
+
+        int[] temp = boardList.get(0).getExitCoordinate();
+
+        json.append("  ],\n");
+        json.append("  \"exit\": {\n");
+        json.append("    \"row\": ").append(temp[0]).append(",\n");
+        json.append("    \"col\": ").append(temp[1]).append("\n");
+        json.append("  },\n");
+        json.append("  \"time\": ").append(time).append("\n");
+        json.append("}");
+
         return json.toString();
     }
 

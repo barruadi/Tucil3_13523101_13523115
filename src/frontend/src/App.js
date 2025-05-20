@@ -7,9 +7,12 @@ function App() {
     steps: [],
     currentBlocks: [],
     boardSize: { width: 6, height: 6 },
+    exit: { row: 0, col: 0},
     stepIndex: 0,
     isPlaying: false,
   });
+
+  const [time, setTime] = useState(0);
 
   const [setupState, setSetupState] = useState({
     selectedFile: null,
@@ -22,6 +25,12 @@ function App() {
       .then(res => res.json())
       .then(data => {
         const allSteps = data.steps;
+
+        if (allSteps.length === 0) {
+          alert("No solution found.");
+          return;
+        }
+        
         setControlState(prev => ({
           ...prev,
           steps: allSteps,
@@ -31,7 +40,12 @@ function App() {
             width: allSteps[0]?.boardState.width || 6,
             height: allSteps[0]?.boardState.height || 6,
           },
+          exit: {
+            row: data?.exit.row || 0,
+            col: data?.exit.col || 0,
+          }
         }));
+        setTime(data.time);
       });
   };
 
@@ -90,10 +104,15 @@ function App() {
       <div className="main-layout">
         <div className="main-content">
           <h1>Tucil3 - RushHour</h1>
-          <PuzzleBoard blocks={controlState.currentBlocks} boardSize={controlState.boardSize} />
+          <PuzzleBoard 
+            blocks={controlState.currentBlocks} 
+            boardSize={controlState.boardSize} 
+            exit={controlState.exit}
+            />
 
           <div className="step-counter">
             <p>Step: {controlState.stepIndex + 1} / {controlState.steps.length}</p>
+            <p>Time: {time} ms</p>
           </div>
 
           <div className="controls">

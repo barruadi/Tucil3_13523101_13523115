@@ -4,7 +4,7 @@ import { getBlockColor } from './Colors';
 
 const CELL_SIZE = 60;
 
-export default function Board({ blocks, boardSize }) {
+export default function Board({ blocks, boardSize, exit }) {
     return (
         <div
             className="board-container"
@@ -28,6 +28,18 @@ export default function Board({ blocks, boardSize }) {
                 </div>
             );
             })}
+            
+            {exit && (
+                <div
+                    className="exit"
+                    style={{
+                        top: exit.row * CELL_SIZE,
+                        left: exit.col * CELL_SIZE,
+                        width: CELL_SIZE,
+                        height: CELL_SIZE,
+                    }}
+                />
+            )}
         </div>
     );
 }

@@ -227,4 +227,29 @@ public class Board {
         }
         return true;
     }
+
+    public int[] getExitCoordinate() {
+        int[] res = {0, 0}; // row, col
+        if (primaryBlock.isBlockVertical() && isKiriAtas()) {
+            res[0] = -1;
+            res[1] = primaryBlock.getBlockColIndex();
+            return res;
+        } 
+        if (primaryBlock.isBlockVertical() && !isKiriAtas()) {
+            res[0] = this.height;
+            res[1] = primaryBlock.getBlockColIndex();
+            return res;
+        } 
+        if (!primaryBlock.isBlockVertical() && isKiriAtas()) {
+            res[0] = primaryBlock.getBlockRowIndex();
+            res[1] = -1;
+            return res;
+        } 
+        if (!primaryBlock.isBlockVertical() && !isKiriAtas()) {
+            res[0] = primaryBlock.getBlockRowIndex();
+            res[1] = this.width;
+            return res;
+        } 
+        return res;
+    }
 }

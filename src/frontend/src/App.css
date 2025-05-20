@@ -105,3 +105,10 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+.exit {
+  position: absolute;
+  background-color: rgba(0, 255, 0, 0.3); /* greenish transparent */
+  border: 2px dashed green;
+  box-sizing: border-box;
+}
