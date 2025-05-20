@@ -27,7 +27,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
     const uploadedPath = req.file.path;
     const algorithm = req.body.algorithm;
     const heuristic = req.body.heuristic;
-    const targetPath = path.join(inputPath, 'test/input', 'input.txt');
+    const targetPath = path.join(inputPath, 'test/input', 'qwertyuiop.txt');
 
     fs.renameSync(uploadedPath, targetPath);
 

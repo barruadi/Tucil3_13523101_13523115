@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         InputOutput io = new InputOutput();
-        List<String> lines = io.readFileFromString("input.txt");
+        List<String> lines = io.readFileFromString("qwertyuiop.txt");
 
         Board board = io.makeBoard(lines);
         boolean cek = io.makeBlocks(lines,board);
