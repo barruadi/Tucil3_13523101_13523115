@@ -1,8 +1,10 @@
 import algorithm.AStar;
+import algorithm.BoardToJsonConverter;
 import board.Board;
-import java.util.*;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.*; 
 import utils.InputOutput;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -18,18 +20,31 @@ public class Main {
         }
 
         List<Board> allPossibleMoves = board.getAllPossibleMove();
-        AStar aStar = new AStar();
-        List<Board> boards = aStar.AStarAlgorithm(board);
+        List<Board> boards = AStar.AStarAlgorithm(board);
+        // Convert solution to JSON
+        String jsonOutput = BoardToJsonConverter.convertToJson(boards);
+        
+        // // Print JSON to console
+        // System.out.println(jsonOutput);
+        
+        // Save JSON to file
+        try (FileWriter file = new FileWriter("solution.json")) {
+            file.write(jsonOutput);
+            System.out.println("Solution saved to solution.json");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        // BidirectionalSolver al = new BidirectionalSolver();
+        // List<Board> boards = al.solve(board);
         int count = 0;
         if (boards != null) {
             System.out.println("Found solution:" + boards.size());
             for (Board b : boards) {
                 System.out.println("Step " + count++);
                 b.printBoard();
-            }
-        } else {
-            System.out.println("No solution found.");
-        }
-        
+            }}
+        // } else {
+        //     System.out.println("No solution found.");
+        // }
     }
 }
