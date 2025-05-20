@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 
         InputOutput io = new InputOutput();
-        List<String> lines = io.readFileFromString("tes.txt");
+        List<String> lines = io.readFileFromString("input.txt");
 
         Board board = io.makeBoard(lines);
         boolean cek = io.makeBlocks(lines,board);
@@ -28,7 +28,7 @@ public class Main {
         // System.out.println(jsonOutput);
         
         // Save JSON to file
-        try (FileWriter file = new FileWriter("solution.json")) {
+        try (FileWriter file = new FileWriter("../src/frontend/public/solution.json")) {
             file.write(jsonOutput);
             System.out.println("Solution saved to solution.json");
         } catch (IOException e) {

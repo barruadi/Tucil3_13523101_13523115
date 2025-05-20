@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   const [steps, setSteps] = useState([]);
   const [currentBlocks, setCurrentBlocks] = useState([]);
-  const [boardSize, setBoardSize] = useState({ width: 10, height: 7 });
+  const [boardSize, setBoardSize] = useState({ width: 6, height: 6 });
   const [stepIndex, setStepIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null);
