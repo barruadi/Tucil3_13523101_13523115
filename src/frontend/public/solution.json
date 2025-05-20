@@ -1,0 +1,701 @@
+{
+  "steps": [
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", "B", ".", ".", "F"],
+          [".", ".", "B", "C", "D", "F"],
+          ["G", "P", "P", "C", "D", "F"],
+          ["G", "H", ".", "I", "I", "I"],
+          ["G", "H", "J", ".", ".", "."],
+          ["L", "L", "J", "M", "M", "."]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 0,
+            "col": 5,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 2,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 2,
+            "col": 1,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": true
+          },
+          {
+            "id": "H",
+            "row": 3,
+            "col": 1,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 3,
+            "size": 3,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "L",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "M",
+            "row": 5,
+            "col": 3,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", "B", ".", ".", "F"],
+          [".", ".", "B", "C", "D", "F"],
+          ["G", "P", "P", "C", "D", "F"],
+          ["G", "H", "I", "I", "I", "."],
+          ["G", "H", "J", ".", ".", "."],
+          ["L", "L", "J", "M", "M", "."]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 0,
+            "col": 5,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 2,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 2,
+            "col": 1,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": true
+          },
+          {
+            "id": "H",
+            "row": 3,
+            "col": 1,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "L",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "M",
+            "row": 5,
+            "col": 3,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 2,
+            "size": 3,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "I",
+        "direction": "LEFT",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", "B", ".", ".", "."],
+          [".", ".", "B", "C", "D", "."],
+          ["G", "P", "P", "C", "D", "."],
+          ["G", "H", "I", "I", "I", "F"],
+          ["G", "H", "J", ".", ".", "F"],
+          ["L", "L", "J", "M", "M", "F"]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 2,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 2,
+            "col": 1,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": true
+          },
+          {
+            "id": "H",
+            "row": 3,
+            "col": 1,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "L",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "M",
+            "row": 5,
+            "col": 3,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 2,
+            "size": 3,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 5,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "F",
+        "direction": "DOWN",
+        "steps": 3
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", "B", "C", ".", "."],
+          [".", ".", "B", "C", "D", "."],
+          ["G", "P", "P", ".", "D", "."],
+          ["G", "H", "I", "I", "I", "F"],
+          ["G", "H", "J", ".", ".", "F"],
+          ["L", "L", "J", "M", "M", "F"]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 2,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 2,
+            "col": 1,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": true
+          },
+          {
+            "id": "H",
+            "row": 3,
+            "col": 1,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "L",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "M",
+            "row": 5,
+            "col": 3,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 2,
+            "size": 3,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 5,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "C",
+        "direction": "UP",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", "B", "C", "D", "."],
+          [".", ".", "B", "C", "D", "."],
+          ["G", "P", "P", ".", ".", "."],
+          ["G", "H", "I", "I", "I", "F"],
+          ["G", "H", "J", ".", ".", "F"],
+          ["L", "L", "J", "M", "M", "F"]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 2,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 2,
+            "col": 1,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": true
+          },
+          {
+            "id": "H",
+            "row": 3,
+            "col": 1,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "L",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "M",
+            "row": 5,
+            "col": 3,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 2,
+            "size": 3,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 5,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "D",
+        "direction": "UP",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", "B", "C", "D", "."],
+          [".", ".", "B", "C", "D", "."],
+          ["G", ".", ".", ".", "P", "P"],
+          ["G", "H", "I", "I", "I", "F"],
+          ["G", "H", "J", ".", ".", "F"],
+          ["L", "L", "J", "M", "M", "F"]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 2,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 3,
+            "col": 1,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "L",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "M",
+            "row": 5,
+            "col": 3,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 2,
+            "size": 3,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 5,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": true
+          }
+        ]
+      },
+      "move": {
+        "blockId": "P",
+        "direction": "RIGHT",
+        "steps": 3
+      }
+    }
+  ]
+}

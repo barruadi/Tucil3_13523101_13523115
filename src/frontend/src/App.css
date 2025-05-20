@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background-color: #f2f4f8;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #1976d2;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.controls button:hover:not(:disabled) {
+  background-color: #125ea6;
+}
+
+.upload-section {
+  margin-top: 30px;
+}
+
+.upload-section input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.upload-section button {
+  padding: 10px 20px;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.upload-section button:hover {
+  background-color: #357a38;
+}

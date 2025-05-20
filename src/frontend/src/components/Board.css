@@ -1,0 +1,18 @@
+.board-container {
+    position: relative;
+    background-color: #f0f0f0;
+    border: 3px solid #333;
+    margin: 20px auto;
+}
+
+.block {
+    position: absolute;
+    transition: top 0.4s ease, left 0.4s ease;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 20px;
+}
