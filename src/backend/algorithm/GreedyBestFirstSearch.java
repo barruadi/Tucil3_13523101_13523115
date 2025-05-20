@@ -5,12 +5,12 @@ import board.Board;
 
 public class GreedyBestFirstSearch {
     
-    public static List<Board> GreedyAlgorithm(Board initialBoard) {
+    public static List<Board> GreedyAlgorithm(Board initialBoard, String method) {
         PriorityQueue<BoardNode> openSet = new PriorityQueue<>();
         Set<String> closedSet = new HashSet<>();
         Map<String, BoardNode> allNodes = new HashMap<>();
         
-        int h = Heuristic.calculateHeuristic(initialBoard);
+        int h = Heuristic.calculateHeuristic(initialBoard, method);
         BoardNode startNode = new BoardNode(initialBoard, null, 0, h);
         openSet.add(startNode);
         allNodes.put(BoardNode.boardToString(initialBoard), startNode);
@@ -33,7 +33,7 @@ public class GreedyBestFirstSearch {
                     continue;
                 }
                 
-                int hScore = Heuristic.calculateHeuristic(nextBoard);
+                int hScore = Heuristic.calculateHeuristic(nextBoard, method);
                 BoardNode nextNode = allNodes.get(nextBoardString);
                 boolean isNewNode = (nextNode == null);
                 

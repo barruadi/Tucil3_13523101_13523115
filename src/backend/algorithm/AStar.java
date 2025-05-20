@@ -8,14 +8,14 @@ import algorithm.BoardNode;
 
 public class AStar {
     
-    public static List<Board> AStarAlgorithm(Board initialBoard) {
+    public static List<Board> AStarAlgorithm(Board initialBoard, String method) {
         PriorityQueue<BoardNode> openSet = new PriorityQueue<>();
         Set<String> closedSet = new HashSet<>();
         Map<String, BoardNode> allNodes = new HashMap<>();
         
-        
         // inisialisasi awal
-        BoardNode startNode = new BoardNode(initialBoard, null, 0, Heuristic.calculateHeuristic(initialBoard));
+        int hInit = Heuristic.calculateHeuristic(initialBoard, method);
+        BoardNode startNode = new BoardNode(initialBoard, null, 0, hInit);
         
         openSet.add(startNode);
         allNodes.put(BoardNode.boardToString(initialBoard), startNode);
@@ -52,7 +52,7 @@ public class AStar {
                             nextBoard,
                             current,
                             tentativeGScore,
-                            Heuristic.calculateHeuristic(nextBoard)
+                            Heuristic.calculateHeuristic(nextBoard, method)
                         );
                         allNodes.put(nextBoardString, nextNode);
                         // System.out.println("Adding new node: " + nextBoardString);
