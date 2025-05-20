@@ -37,7 +37,8 @@ public class Main {
         String jsonOutput = BoardToJsonConverter.convertToJson(boards);
         
         // Save JSON to file
-        try (FileWriter file = new FileWriter("../src/frontend/public/solution.json")) {
+        try (FileWriter file = new FileWriter("../src/frontend/test/public/solution.json")) {
+            System.out.println("Absolute path: " + new java.io.File("../src/frontend/test/public/solution.json").getAbsolutePath());
             file.write(jsonOutput);
             System.out.println("Solution saved to solution.json");
         } catch (IOException e) {

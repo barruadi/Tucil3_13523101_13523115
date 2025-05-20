@@ -1,0 +1,3814 @@
+{
+  "steps": [
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", "P", "H", ".", "."],
+          ["B", "D", "P", "H", ".", "."],
+          ["B", "D", "E", "E", ".", "."],
+          ["B", "D", "F", "F", "I", "I"],
+          [".", ".", ".", ".", "J", "."],
+          ["C", "C", "G", "G", "J", "."]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 1,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 1,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", "P", "H", ".", "."],
+          ["B", "D", "P", "H", ".", "."],
+          ["B", "D", ".", ".", "E", "E"],
+          ["B", "D", "F", "F", "I", "I"],
+          [".", ".", ".", ".", "J", "."],
+          ["C", "C", "G", "G", "J", "."]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 1,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 1,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "E",
+        "direction": "RIGHT",
+        "steps": 2
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", "P", ".", ".", "."],
+          ["B", "D", "P", "H", ".", "."],
+          ["B", "D", ".", "H", "E", "E"],
+          ["B", "D", "F", "F", "I", "I"],
+          [".", ".", ".", ".", "J", "."],
+          ["C", "C", "G", "G", "J", "."]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "B",
+            "row": 1,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 1,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "H",
+        "direction": "DOWN",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", ".", ".", ".", "."],
+          ["B", "D", "P", "H", ".", "."],
+          ["B", "D", "P", "H", "E", "E"],
+          ["B", "D", "F", "F", "I", "I"],
+          [".", ".", ".", ".", "J", "."],
+          ["C", "C", "G", "G", "J", "."]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 1,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 1,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          }
+        ]
+      },
+      "move": {
+        "blockId": "P",
+        "direction": "DOWN",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          [".", ".", ".", ".", "A", "A"],
+          ["B", "D", "P", "H", ".", "."],
+          ["B", "D", "P", "H", "E", "E"],
+          ["B", "D", "F", "F", "I", "I"],
+          [".", ".", ".", ".", "J", "."],
+          ["C", "C", "G", "G", "J", "."]
+        ],
+        "blocks": [
+          {
+            "id": "B",
+            "row": 1,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 1,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "A",
+        "direction": "RIGHT",
+        "steps": 4
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          [".", "D", ".", ".", "A", "A"],
+          ["B", "D", "P", "H", ".", "."],
+          ["B", "D", "P", "H", "E", "E"],
+          ["B", ".", "F", "F", "I", "I"],
+          [".", ".", ".", ".", "J", "."],
+          ["C", "C", "G", "G", "J", "."]
+        ],
+        "blocks": [
+          {
+            "id": "B",
+            "row": 1,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "D",
+        "direction": "UP",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", ".", ".", "A", "A"],
+          ["B", "D", "P", "H", ".", "."],
+          ["B", "D", "P", "H", "E", "E"],
+          [".", ".", "F", "F", "I", "I"],
+          [".", ".", ".", ".", "J", "."],
+          ["C", "C", "G", "G", "J", "."]
+        ],
+        "blocks": [
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "B",
+        "direction": "UP",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", ".", ".", "A", "A"],
+          ["B", "D", "P", "H", ".", "."],
+          ["B", "D", "P", "H", "E", "E"],
+          ["F", "F", ".", ".", "I", "I"],
+          [".", ".", ".", ".", "J", "."],
+          ["C", "C", "G", "G", "J", "."]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "F",
+        "direction": "LEFT",
+        "steps": 2
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", ".", "H", "A", "A"],
+          ["B", "D", "P", "H", ".", "."],
+          ["B", "D", "P", ".", "E", "E"],
+          ["F", "F", ".", ".", "I", "I"],
+          [".", ".", ".", ".", "J", "."],
+          ["C", "C", "G", "G", "J", "."]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "H",
+        "direction": "UP",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", "P", "H", "A", "A"],
+          ["B", "D", "P", "H", ".", "."],
+          ["B", "D", ".", ".", "E", "E"],
+          ["F", "F", ".", ".", "I", "I"],
+          [".", ".", ".", ".", "J", "."],
+          ["C", "C", "G", "G", "J", "."]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          }
+        ]
+      },
+      "move": {
+        "blockId": "P",
+        "direction": "UP",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", "P", "H", "A", "A"],
+          ["B", "D", "P", "H", ".", "."],
+          ["B", "D", "E", "E", ".", "."],
+          ["F", "F", ".", ".", "I", "I"],
+          [".", ".", ".", ".", "J", "."],
+          ["C", "C", "G", "G", "J", "."]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 4,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "E",
+        "direction": "LEFT",
+        "steps": 2
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", "P", "H", "A", "A"],
+          ["B", "D", "P", "H", ".", "."],
+          ["B", "D", "E", "E", ".", "."],
+          ["F", "F", "I", "I", ".", "."],
+          [".", ".", ".", ".", "J", "."],
+          ["C", "C", "G", "G", "J", "."]
+        ],
+        "blocks": [
+          {
+            "id": "J",
+            "row": 4,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "I",
+        "direction": "LEFT",
+        "steps": 2
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", "P", "H", "A", "A"],
+          ["B", "D", "P", "H", "J", "."],
+          ["B", "D", "E", "E", "J", "."],
+          ["F", "F", "I", "I", ".", "."],
+          [".", ".", ".", ".", ".", "."],
+          ["C", "C", "G", "G", ".", "."]
+        ],
+        "blocks": [
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "J",
+        "direction": "UP",
+        "steps": 3
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", "P", "H", "A", "A"],
+          ["B", "D", "P", "H", "J", "."],
+          ["B", "D", "E", "E", "J", "."],
+          ["F", "F", ".", ".", "I", "I"],
+          [".", ".", ".", ".", ".", "."],
+          ["C", "C", "G", "G", ".", "."]
+        ],
+        "blocks": [
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "I",
+        "direction": "RIGHT",
+        "steps": 2
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", "P", "H", "A", "A"],
+          ["B", "D", "P", "H", "J", "."],
+          ["B", "D", "E", "E", "J", "."],
+          ["F", "F", ".", ".", "I", "I"],
+          [".", ".", ".", ".", ".", "."],
+          ["C", "C", ".", ".", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "G",
+        "direction": "RIGHT",
+        "steps": 2
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", "P", "H", "A", "A"],
+          ["B", "D", "P", "H", "J", "."],
+          ["B", "D", "E", "E", "J", "."],
+          ["F", "F", ".", ".", "I", "I"],
+          [".", ".", ".", ".", ".", "."],
+          [".", ".", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "C",
+        "direction": "RIGHT",
+        "steps": 2
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", "P", "H", "A", "A"],
+          ["B", "D", "P", "H", "J", "."],
+          ["B", "D", "E", "E", "J", "."],
+          [".", ".", "F", "F", "I", "I"],
+          [".", ".", ".", ".", ".", "."],
+          [".", ".", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "F",
+        "direction": "RIGHT",
+        "steps": 2
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          [".", "D", "P", "H", "A", "A"],
+          [".", "D", "P", "H", "J", "."],
+          [".", "D", "E", "E", "J", "."],
+          ["B", ".", "F", "F", "I", "I"],
+          ["B", ".", ".", ".", ".", "."],
+          ["B", ".", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 3,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "B",
+        "direction": "DOWN",
+        "steps": 3
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          [".", ".", "P", "H", "A", "A"],
+          [".", ".", "P", "H", "J", "."],
+          [".", ".", "E", "E", "J", "."],
+          ["B", "D", "F", "F", "I", "I"],
+          ["B", "D", ".", ".", ".", "."],
+          ["B", "D", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 3,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 3,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "D",
+        "direction": "DOWN",
+        "steps": 3
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          [".", ".", "P", "H", "A", "A"],
+          [".", ".", "P", "H", "J", "."],
+          ["E", "E", ".", ".", "J", "."],
+          ["B", "D", "F", "F", "I", "I"],
+          ["B", "D", ".", ".", ".", "."],
+          ["B", "D", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "J",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 3,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 3,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "E",
+        "direction": "LEFT",
+        "steps": 2
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          [".", ".", ".", "H", "A", "A"],
+          [".", ".", "P", "H", "J", "."],
+          ["E", "E", "P", ".", "J", "."],
+          ["B", "D", "F", "F", "I", "I"],
+          ["B", "D", ".", ".", ".", "."],
+          ["B", "D", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 3,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 3,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          }
+        ]
+      },
+      "move": {
+        "blockId": "P",
+        "direction": "DOWN",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          [".", ".", ".", ".", "A", "A"],
+          [".", ".", "P", "H", "J", "."],
+          ["E", "E", "P", "H", "J", "."],
+          ["B", "D", "F", "F", "I", "I"],
+          ["B", "D", ".", ".", ".", "."],
+          ["B", "D", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "A",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 3,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 3,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "H",
+        "direction": "DOWN",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", ".", ".", ".", "."],
+          [".", ".", "P", "H", "J", "."],
+          ["E", "E", "P", "H", "J", "."],
+          ["B", "D", "F", "F", "I", "I"],
+          ["B", "D", ".", ".", ".", "."],
+          ["B", "D", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "J",
+            "row": 1,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 3,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 3,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "A",
+        "direction": "LEFT",
+        "steps": 4
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", ".", ".", "J", "."],
+          [".", ".", "P", "H", "J", "."],
+          ["E", "E", "P", "H", ".", "."],
+          ["B", "D", "F", "F", "I", "I"],
+          ["B", "D", ".", ".", ".", "."],
+          ["B", "D", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 3,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 3,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "J",
+        "direction": "UP",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", "P", ".", "J", "."],
+          [".", ".", "P", "H", "J", "."],
+          ["E", "E", ".", "H", ".", "."],
+          ["B", "D", "F", "F", "I", "I"],
+          ["B", "D", ".", ".", ".", "."],
+          ["B", "D", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 3,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 3,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          }
+        ]
+      },
+      "move": {
+        "blockId": "P",
+        "direction": "UP",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", "P", "H", "J", "."],
+          [".", ".", "P", "H", "J", "."],
+          ["E", "E", ".", ".", ".", "."],
+          ["B", "D", "F", "F", "I", "I"],
+          ["B", "D", ".", ".", ".", "."],
+          ["B", "D", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 3,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 3,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "H",
+        "direction": "UP",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", "P", "H", "J", "."],
+          [".", ".", "P", "H", "J", "."],
+          [".", ".", ".", ".", "E", "E"],
+          ["B", "D", "F", "F", "I", "I"],
+          ["B", "D", ".", ".", ".", "."],
+          ["B", "D", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 3,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 3,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "H",
+            "row": 0,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "E",
+        "direction": "RIGHT",
+        "steps": 4
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", "P", ".", "J", "."],
+          [".", ".", "P", "H", "J", "."],
+          [".", ".", ".", "H", "E", "E"],
+          ["B", "D", "F", "F", "I", "I"],
+          ["B", "D", ".", ".", ".", "."],
+          ["B", "D", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 3,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 3,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "H",
+        "direction": "DOWN",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["A", "A", ".", ".", "J", "."],
+          [".", ".", "P", "H", "J", "."],
+          [".", ".", "P", "H", "E", "E"],
+          ["B", "D", "F", "F", "I", "I"],
+          ["B", "D", ".", ".", ".", "."],
+          ["B", "D", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 3,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 3,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          }
+        ]
+      },
+      "move": {
+        "blockId": "P",
+        "direction": "DOWN",
+        "steps": 1
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          [".", ".", "A", "A", "J", "."],
+          [".", ".", "P", "H", "J", "."],
+          [".", ".", "P", "H", "E", "E"],
+          ["B", "D", "F", "F", "I", "I"],
+          ["B", "D", ".", ".", ".", "."],
+          ["B", "D", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 3,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 3,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "A",
+        "direction": "RIGHT",
+        "steps": 2
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", ".", "A", "A", "J", "."],
+          ["B", ".", "P", "H", "J", "."],
+          ["B", ".", "P", "H", "E", "E"],
+          [".", "D", "F", "F", "I", "I"],
+          [".", "D", ".", ".", ".", "."],
+          [".", "D", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 3,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "B",
+        "direction": "UP",
+        "steps": 3
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", "A", "A", "J", "."],
+          ["B", "D", "P", "H", "J", "."],
+          ["B", "D", "P", "H", "E", "E"],
+          [".", ".", "F", "F", "I", "I"],
+          [".", ".", ".", ".", ".", "."],
+          [".", ".", "C", "C", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "D",
+        "direction": "UP",
+        "steps": 3
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", "A", "A", "J", "."],
+          ["B", "D", "P", "H", "J", "."],
+          ["B", "D", "P", "H", "E", "E"],
+          [".", ".", "F", "F", "I", "I"],
+          [".", ".", ".", ".", ".", "."],
+          ["C", "C", ".", ".", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "C",
+        "direction": "LEFT",
+        "steps": 2
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", "A", "A", "J", "."],
+          ["B", "D", "P", "H", "J", "."],
+          ["B", "D", "P", "H", "E", "E"],
+          ["F", "F", ".", ".", "I", "I"],
+          [".", ".", ".", ".", ".", "."],
+          ["C", "C", ".", ".", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 1,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          }
+        ]
+      },
+      "move": {
+        "blockId": "F",
+        "direction": "LEFT",
+        "steps": 2
+      }
+    },
+    {
+      "boardState": {
+        "height": 6,
+        "width": 6,
+        "grid": [
+          ["B", "D", "A", "A", "J", "."],
+          ["B", "D", ".", "H", "J", "."],
+          ["B", "D", ".", "H", "E", "E"],
+          ["F", "F", ".", ".", "I", "I"],
+          [".", ".", "P", ".", ".", "."],
+          ["C", "C", "P", ".", "G", "G"]
+        ],
+        "blocks": [
+          {
+            "id": "I",
+            "row": 3,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "G",
+            "row": 5,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "J",
+            "row": 0,
+            "col": 4,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "E",
+            "row": 2,
+            "col": 4,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "H",
+            "row": 1,
+            "col": 3,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "A",
+            "row": 0,
+            "col": 2,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "B",
+            "row": 0,
+            "col": 0,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "D",
+            "row": 0,
+            "col": 1,
+            "size": 3,
+            "isVertical": true,
+            "isPrimary": false
+          },
+          {
+            "id": "C",
+            "row": 5,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "F",
+            "row": 3,
+            "col": 0,
+            "size": 2,
+            "isVertical": false,
+            "isPrimary": false
+          },
+          {
+            "id": "P",
+            "row": 4,
+            "col": 2,
+            "size": 2,
+            "isVertical": true,
+            "isPrimary": true
+          }
+        ]
+      },
+      "move": {
+        "blockId": "P",
+        "direction": "DOWN",
+        "steps": 3
+      }
+    }
+  ]
+}

@@ -18,7 +18,7 @@ function App() {
   });
 
   const loadSolution = () => {
-    fetch('http://localhost:3000/solution.json')
+    fetch('http://localhost:3001/solution')
       .then(res => res.json())
       .then(data => {
         const allSteps = data.steps;
