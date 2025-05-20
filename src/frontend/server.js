@@ -25,6 +25,8 @@ app.use(express.static(path.join(inputPath, 'test/public')));
 
 app.post('/upload', upload.single('file'), (req, res) => {
     const uploadedPath = req.file.path;
+    const algorithm = req.body.algorithm;
+    const heuristic = req.body.heuristic;
     const targetPath = path.join(inputPath, 'test/input', 'input.txt');
 
     fs.renameSync(uploadedPath, targetPath);
@@ -37,7 +39,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
           `cd ${filepath} && 
           ${compileCommand} && 
           cd bin &&
-          java Main`;
+          java Main ${algorithm} ${heuristic}`;
 
         // execute command (need testing)
         const output = execSync(command, { encoding: 'utf-8' });

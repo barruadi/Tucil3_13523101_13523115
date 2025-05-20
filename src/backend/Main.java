@@ -1,5 +1,4 @@
-import algorithm.AStar;
-import algorithm.BoardToJsonConverter;
+import algorithm.*;
 import board.Board;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -19,8 +18,20 @@ public class Main {
             return;
         }
 
+        String algorithm = args[0];
+
         List<Board> allPossibleMoves = board.getAllPossibleMove();
-        List<Board> boards = AStar.AStarAlgorithm(board);
+
+        List<Board> boards = new ArrayList<>();
+        if (algorithm.equals("AStar")) {
+            boards = AStar.AStarAlgorithm(board);
+        } else if (algorithm.equals("UCS")) {
+            boards = UCS.UCSAlgorithm(board);
+        } else if (algorithm.equals("GBFS")) {
+            boards = GreedyBestFirstSearch.GreedyAlgorithm(board);
+        } else if (algorithm.equals("bidirectional")) {
+            boards = BidirectionalSolver.solve(board);
+        }
         // Convert solution to JSON
         String jsonOutput = BoardToJsonConverter.convertToJson(boards);
         

@@ -6,7 +6,7 @@ import java.util.*;
 
 public class BidirectionalSolver {
 
-    public List<Board> solve(Board startBoard) {
+    public static List<Board> solve(Board startBoard) {
         Queue<Board> forwardQueue = new LinkedList<>();
         Queue<Board> backwardQueue = new LinkedList<>();
 
@@ -59,7 +59,7 @@ public class BidirectionalSolver {
         return null;
     }
 
-    private List<Board> mergePath(BoardNode forwardNode, BoardNode backwardNode) {
+    private static List<Board> mergePath(BoardNode forwardNode, BoardNode backwardNode) {
         LinkedList<Board> path = new LinkedList<>();
         BoardNode curr = forwardNode;
         while (curr != null) {
@@ -76,7 +76,7 @@ public class BidirectionalSolver {
         return path;
     }
 
-    private Board generateGoalBoard(Board from) {
+    private static Board generateGoalBoard(Board from) {
         Board copy = from.clone();
         copy.setKiriAtas(from.isKiriAtas());
         Block primary = copy.getPrimaryBlock();

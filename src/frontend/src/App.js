@@ -9,6 +9,8 @@ function App() {
   const [stepIndex, setStepIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null);
+  const [algorithm, setAlgorithm] = useState("AStar");
+  const [heuristic, setHeuristic] = useState("1");
 
   const loadSolution = () => {
     fetch('http://localhost:3000/solution.json')
@@ -48,6 +50,8 @@ function App() {
 
     const formData = new FormData();
     formData.append('file', selectedFile);
+    formData.append('algorithm', algorithm);
+    formData.append('heuristic', heuristic);
 
     fetch("http://localhost:3001/upload", {
       method: "POST",
@@ -98,6 +102,19 @@ function App() {
       <div className="upload-section">
         <input type="file" accept=".txt" onChange={handleFileChange} />
         <button onClick={handleStartAlgorithm}>Start</button>
+
+        <select value={algorithm} onChange={(e) => setAlgorithm(e.target.value)}>
+          <option value="AStar">A*</option>
+          <option value="bidirectional">Bidirectional</option>
+          <option value="UCS">Uniform Cost Search</option>
+          <option value="GBFS">Greedy Best First Search</option>
+        </select>
+
+        <select value={heuristic} onChange={(e) => setHeuristic(e.target.value)}>
+          <option value="1">Menghitung jarak</option>
+          <option value="2">Hitung jumlah block yang menghalangi</option>
+        </select>
+
       </div>
     </div>
   );
