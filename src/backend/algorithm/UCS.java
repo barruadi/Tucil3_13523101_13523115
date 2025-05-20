@@ -5,12 +5,14 @@ import board.Board;
 
 public class UCS {
     
-    public static List<Board> UCSAlgorithm(Board initialBoard) {
+    public static List<Board> UCSAlgorithm(Board initialBoard, String method) {
         PriorityQueue<BoardNode> openSet = new PriorityQueue<>();
         Set<String> closedSet = new HashSet<>();
         Map<String, BoardNode> allNodes = new HashMap<>();
+
+        int hInit = Heuristic.calculateHeuristic(initialBoard, method);
+        BoardNode startNode = new BoardNode(initialBoard, null, 0, hInit);
         
-        BoardNode startNode = new BoardNode(initialBoard, null, 0, 0); // h = 0
         openSet.add(startNode);
         allNodes.put(BoardNode.boardToString(initialBoard), startNode);
         
@@ -38,7 +40,12 @@ public class UCS {
 
                 if (isNewNode || tentativeGScore < nextNode.gScore) {
                     if (isNewNode) {
-                        nextNode = new BoardNode(nextBoard, current, tentativeGScore, 0);
+                        nextNode = new BoardNode(
+                            nextBoard, 
+                            current, 
+                            tentativeGScore, 
+                            Heuristic.calculateHeuristic(initialBoard, method)
+                        );
                         allNodes.put(nextBoardString, nextNode);
                     } else {
                         nextNode.parent = current;

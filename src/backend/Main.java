@@ -19,24 +19,22 @@ public class Main {
         }
 
         String algorithm = args[0];
+        String heuristic = args[1];
 
         List<Board> allPossibleMoves = board.getAllPossibleMove();
 
         List<Board> boards = new ArrayList<>();
         if (algorithm.equals("AStar")) {
-            boards = AStar.AStarAlgorithm(board);
+            boards = AStar.AStarAlgorithm(board, heuristic);
         } else if (algorithm.equals("UCS")) {
-            boards = UCS.UCSAlgorithm(board);
+            boards = UCS.UCSAlgorithm(board, heuristic);
         } else if (algorithm.equals("GBFS")) {
-            boards = GreedyBestFirstSearch.GreedyAlgorithm(board);
+            boards = GreedyBestFirstSearch.GreedyAlgorithm(board, heuristic);
         } else if (algorithm.equals("bidirectional")) {
             boards = BidirectionalSolver.solve(board);
         }
         // Convert solution to JSON
         String jsonOutput = BoardToJsonConverter.convertToJson(boards);
-        
-        // // Print JSON to console
-        // System.out.println(jsonOutput);
         
         // Save JSON to file
         try (FileWriter file = new FileWriter("../src/frontend/public/solution.json")) {
@@ -45,8 +43,7 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        // BidirectionalSolver al = new BidirectionalSolver();
-        // List<Board> boards = al.solve(board);
+
         int count = 0;
         if (boards != null) {
             System.out.println("Found solution:" + boards.size());

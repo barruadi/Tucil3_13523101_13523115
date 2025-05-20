@@ -4,9 +4,17 @@ import block.Block;
 import board.Board;
 
 public class Heuristic{
+    public static int calculateHeuristic(Board board, String method) {
+        if (method.equals("1")) {
+            return calculateHeuristicSatu(board);
+        } else if (method.equals("2")) {
+            return calculateHeuristicDua(board);
+        }
+        return 0;
+    }
 
     // Heuristic 1: cari jarak dari primary block ke exit
-    public static int calculateHeuristic(Board board) {
+    public static int calculateHeuristicSatu(Board board) {
         Block primaryBlock = board.getPrimaryBlock();
         
         if (primaryBlock.isBlockVertical()) {
