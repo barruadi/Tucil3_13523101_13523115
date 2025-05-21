@@ -1,6 +1,6 @@
 # <h1 align="center">Tugas Kecil 3 IF2211 Strategi Algoritma</h1>
 <h2 align="center">Semester II tahun 2024/2025</h2>
-<h3 align="center">Solving Rush Hour 2 Puzzle Using Pathfinding Algoruthm</h3>
+<h3 align="center">Solving Rush Hour 2 Puzzle Using Pathfinding Algorithm</h3>
 
 <p align="center">
   <img src="doc/image.png" alt="Main" width="200">
